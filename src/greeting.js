@@ -16,12 +16,12 @@ const handleYourNameSubmit = (event) => {
     event.preventDefault();
     saveYourName(yourNameInput.value);
     loadYourName();
-    nameEditBtn.style.display = "block";
-
+    // nameEditBtn.style.display = "block";
 }
 
 const removeInput = () => {
     yourNameInput.style.display = "none";
+    nameEditBtn.style.display = "block";
 }
 
 const paintYourName = (yourName) => {

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url /vanila-todo",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,8 +17,9 @@
   "bugs": {
     "url": "https://github.com/devgony/vanila-todo/issues"
   },
-  "homepage": "http://devgony.github.io/vanila-todo",
+  "homepage": "https://devgony.github.io/vanila-todo",
   "dependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "parcel": "^1.9.7"
   }
 }

@@ -1,9 +1,8 @@
-const WEATHER_URL =  "https://home.openweathermap.org/"
 const API_KEY = "04fbe5903fb0ab8181b13029d8a515c8"
 const weather = document.querySelector(".weather h1")
 
 const getWeather = ({latitude: lat, longitude: lon}) => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
     fetch(url).then(res => res.json()).then(
         json => {
             const temperature = json.main.temp;
@@ -19,7 +18,6 @@ const saveCoords = (coordsObj) => {
 }
 
 const handleSuccess = ({coords: {latitude, longitude}}) => {
-    console.log(latitude, longitude);
     saveCoords({latitude, longitude});
 }
 
