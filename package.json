@@ -1,0 +1,22 @@
+{
+  "name": "vanila",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devgony/vanila-todo.git"
+  },
+  "author": "henry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devgony/vanila-todo/issues"
+  },
+  "homepage": "http://devgony.github.io/vanila-todo",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
